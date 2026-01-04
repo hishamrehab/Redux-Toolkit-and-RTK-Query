@@ -6,12 +6,13 @@ export const productsApi = createApi({
         baseUrl : "https://dummyjson.com"
      }),
      endpoints: (builder) => ({
-        //   Get All Products (Reading)
+        //   Get All Products (Reading)getAllProduct
         getAllProduct: builder.query({
-            query: () => `/products`
+            query: () => `/products`,
         })
      }),
 });
 
 
-export const { ueGetAllProductQuery } = productsApi
+// export const {  } = productsApi
+export const { useGetAllProductQuery } = productsApi;
