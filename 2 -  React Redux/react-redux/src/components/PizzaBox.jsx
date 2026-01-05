@@ -11,4 +11,10 @@ const PizzaBox = () => {
   )
 }
 
+const mapStateToProps = (state) => {
+   return {
+   pizzaBase:state.pizzaBase
+   }
+};
+
 export default PizzaBox
