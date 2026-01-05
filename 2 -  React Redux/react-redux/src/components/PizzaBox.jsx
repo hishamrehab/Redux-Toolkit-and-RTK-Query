@@ -1,4 +1,7 @@
-const PizzaBox = () => {
+import { orderPizza  }from "../redux"
+const PizzaBox = (props) => {
+  console.log("props", props);
+
   return (
     <div className="container">
       <h2 className="text">
@@ -16,5 +19,12 @@ const mapStateToProps = (state) => {
    pizzaBase:state.pizzaBase
    }
 };
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    orderPizza: () => dispatch(orderPizza())
+  }
+}
+
 
 export default PizzaBox
