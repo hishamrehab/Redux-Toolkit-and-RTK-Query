@@ -1,4 +1,5 @@
-import { ORDER_PIZZA } from "../redux/pizza/PizzaTypes";
+import { ORDER_PIZZA } from "./PizzaTypes"
+
 const initialState  = {
     pizzaBase : 1000
 }
